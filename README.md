@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Where CrEatiVity meets passion.**
+**Where Imagination Meets Passion**
 
 ## Prerequisites
 
