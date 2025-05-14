@@ -1,33 +1,25 @@
 {
-  "compilerOptions": {
-    "target": "ES2021",                           // modern JS features
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,                              // remove if you no longer have JS files
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,     // avoid path-casing bugs
-    "strict": true,
-    "noEmit": true,                               // Next handles bundling
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",                   // match Node resolution
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",                            // or "react-jsx" if using the new transform
-    "incremental": true,
-    "baseUrl": ".",                               // for your "@/…" imports
-    "paths": {
-      "@/*": ["src/*"]
+    "compilerOptions": {
+        "target": "ES2021", // modern JS features
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true, // remove if you no longer have JS files
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true, // avoid path-casing bugs
+        "strict": true,
+        "noEmit": true, // Next handles bundling
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node", // match Node resolution
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve", // or "react-jsx" if using the new transform
+        "incremental": true,
+        "baseUrl": ".", // for your "@/…" imports
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "plugins": [{ "name": "next" }]
     },
-    "plugins": [
-      { "name": "next" }
-    ]
-  },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+    "exclude": ["node_modules"]
 }
