@@ -4,7 +4,11 @@
   "description": "**Where Imagination Meets Passion**",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
+    "lint:fix": "eslint . --ext .js,.ts,.jsx,.tsx --fix",
+    "format": "prettier --write .",
+    "fix": "npm run lint:fix && npm run format"
+
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/ncsu-yoon-lab/yoonWebsite/issues"
   },
-  "homepage": "https://github.com/ncsu-yoon-lab/yoonWebsite#readme"
+  "homepage": "https://github.com/ncsu-yoon-lab/yoonWebsite#readme",
+  "devDependencies": {
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "prettier": "^3.5.3"
+  }
 }
